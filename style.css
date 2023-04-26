@@ -14,7 +14,9 @@ h3 {
   color: #fff;
 }
 .container {
-  width: 80%;
+  width: 98%;
+  margin-right: 26px;
+
 }
 
 .widthCarrosel {
@@ -52,12 +54,11 @@ body {
 
 .card {
   width: 200px;
-  height: 350px;
+  height: 400px;
   color: #ffffff;
   font-family: "Helvetica Neue", sans-serif;
   display: inline-block;
   vertical-align: top;
-  /* white-space: normal; */
   margin-right: 10px; 
 }
 
@@ -70,7 +71,7 @@ body {
 
 .card-container {
     max-width: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     white-space: nowrap;
   }
 
@@ -194,4 +195,68 @@ body {
     .title-card{
         margin-bottom: 10px;
     }
+
+    ::-webkit-scrollbar {
+      width: 2px; 
+      height: 9px;
+      display: none;
+    }
+    
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment {
+      display: block;
+      display: none;
+
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: #f1f1f1; 
+      display: none;
+
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px; 
+      display: none;
+
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555; 
+      display: none;
+
+    }
+
+    .card{
+      height: 300px;
+    }
+    
+    .sinopse{
+      font-size: 2vh;
+    }
+}
+
+
+::-webkit-scrollbar {
+  width: 2px; 
+  height: 9px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
 }
